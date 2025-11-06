@@ -33,6 +33,8 @@ import GuideOrgSettingsPage from './GuideOrgSettings.jsx';
 import GuideInviteOrgMembersPage from './GuideInviteOrgMembers.jsx';
 import GuideManageOrgMembersPage from './GuideManageOrgMembers.jsx';
 import GuideTransferOwnershipPage from './GuideTransferOwnership.jsx';
+import TermsOfServicePage from './TermsOfService.jsx';
+import PrivacyPolicyPage from './PrivacyPolicy.jsx';
 import './input.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -71,6 +73,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/guides/invite-org-members" element={<GuideInviteOrgMembersPage />} />
         <Route path="/guides/manage-org-members" element={<GuideManageOrgMembersPage />} />
         <Route path="/guides/transfer-ownership" element={<GuideTransferOwnershipPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

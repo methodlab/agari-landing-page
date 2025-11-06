@@ -35,12 +35,12 @@ function Footer() {
           </Link>
         </div>
         <div className="flex flex-wrap font-normal gap-4 sm:gap-6 items-center justify-center leading-6 text-zinc-500 text-sm">
-          <p className="relative cursor-pointer hover:text-zinc-700">
+          <Link to="/terms-of-service" className="relative cursor-pointer hover:text-zinc-700">
             Terms of Service
-          </p>
-          <p className="relative cursor-pointer hover:text-zinc-700">
+          </Link>
+          <Link to="/privacy-policy" className="relative cursor-pointer hover:text-zinc-700">
             Privacy Policy
-          </p>
+          </Link>
           <Link to="/guides" className="relative cursor-pointer hover:text-zinc-700">
             Guides
           </Link>
