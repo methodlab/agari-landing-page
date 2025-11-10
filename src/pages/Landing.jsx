@@ -36,15 +36,15 @@ function Landing() {
                 The African Genomic Archive for Response & Insight (AGARI) is a continental platform for archiving and sharing pathogen genomic information, enabling real-time surveillance to empower a swift response to disease threats across Africa.
               </p>
             </div>
-            <div className="content-stretch flex gap-3 items-start justify-center relative shrink-0 w-full">
+            <Link to="/login" className="content-stretch flex gap-3 items-start justify-center relative shrink-0 w-full">
               <div className="bg-[#204727] box-border content-stretch flex gap-1 items-center justify-center min-w-[80px] overflow-clip px-3 py-2 relative rounded-md shrink-0 cursor-pointer hover:bg-[#1a5632] transition-colors">
                 <div className="box-border content-stretch flex gap-0 items-start px-1 py-0 relative shrink-0">
                   <p className="font-medium leading-6 relative shrink-0 text-[#f3faf3] text-sm text-nowrap whitespace-pre">
-                    Sign in to AGARI
+                    Sign in to AGAR!
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
