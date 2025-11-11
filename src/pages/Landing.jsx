@@ -12,6 +12,14 @@ import imgGroup2 from '../assets/explore-icon.svg';
 import imgGroup3 from '../assets/download-icon.svg';
 import imgCeLogo from '../assets/LOGO_CE_EN_RGB_HORIZONTAL_POS.svg';
 import imgSsl from '../assets/sll.jpg';
+import imgRobertKochInstitute from '../assets/robertkochinstitute.jpeg';
+import imgSanbi from '../assets/sanbi.svg';
+import imgIllumina from '../assets/illumina.jpeg';
+import imgBmgf from '../assets/bmgf.jpg';
+import imgAu from '../assets/au.png';
+import imgAdb from '../assets/adb.png';
+import imgWb from '../assets/wb.jpg';
+import imgOntLogo from '../assets/ont-logo.svg';
 
 function Landing() {
   return (
@@ -68,7 +76,7 @@ function Landing() {
               </p>
             </div>
             <div className="content-stretch flex flex-col gap-2 items-center relative shrink-0 w-full">
-              <div className="content-center flex flex-wrap gap-8 items-center justify-center relative shrink-0 w-full">
+              <div className="content-center flex flex-wrap gap-12 items-center justify-center relative shrink-0 w-full">
                 <div className="h-[98px] relative shrink-0 w-[215px]">
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <img alt="Africa CDC" className="absolute h-[145.78%] left-[-9.89%] max-w-none top-[-19.1%] w-[118.45%]" src={imgAfricaCdcLogoEn1} />
@@ -82,6 +90,30 @@ function Landing() {
                 </div>
                 <div className="h-[87px] relative shrink-0 flex items-center justify-center">
                   <img alt="SSL Logo" className="h-full w-auto object-contain" src={imgSsl} />
+                </div>
+                <div className="h-[87px] relative shrink-0 flex items-center justify-center">
+                  <img alt="Robert Koch Institute" className="h-full w-auto object-contain" src={imgRobertKochInstitute} />
+                </div>
+                <div className="h-[87px] relative shrink-0 flex items-center justify-center">
+                  <img alt="SANBI" className="h-full w-auto object-contain" src={imgSanbi} />
+                </div>
+                <div className="h-[43.5px] relative shrink-0 flex items-center justify-center">
+                  <img alt="Illumina" className="h-full w-auto object-contain" src={imgIllumina} />
+                </div>
+                <div className="h-[87px] relative shrink-0 flex items-center justify-center">
+                  <img alt="BMGF" className="h-full w-auto object-contain" src={imgBmgf} />
+                </div>
+                <div className="h-[70px] relative shrink-0 flex items-center justify-center">
+                  <img alt="AU" className="h-full w-auto object-contain" src={imgAu} />
+                </div>
+                <div className="h-[95px] relative shrink-0 flex items-center justify-center">
+                  <img alt="ADB" className="h-full w-auto object-contain" src={imgAdb} />
+                </div>
+                <div className="h-[87px] relative shrink-0 flex items-center justify-center">
+                  <img alt="WB" className="h-full w-auto object-contain" src={imgWb} />
+                </div>
+                <div className="h-[56px] relative shrink-0 flex items-center justify-center">
+                  <img alt="ONT Logo" className="h-full w-auto object-contain" src={imgOntLogo} />
                 </div>
               </div>
             </div>
