@@ -27,16 +27,16 @@ import imgOntLogo from '../assets/ont-logo.svg';
 function Landing() {
   return (
     <div className="border border-zinc-200 border-solid relative size-full bg-background min-h-screen">
-      <div className="content-stretch flex flex-col items-start relative size-full">
+      <main className="content-stretch flex flex-col items-start relative size-full">
         <Header />
 
         {/* Hero Section */}
-        <div className="bg-zinc-50 box-border content-stretch flex flex-col gap-4 items-center px-8 py-4 relative shrink-0 w-full overflow-hidden">
+        <section className="bg-zinc-50 box-border content-stretch flex flex-col gap-4 items-center px-8 py-4 relative shrink-0 w-full overflow-hidden">
           <GeneticsHeroBackground />
           <div className="box-border content-stretch flex flex-col gap-6 items-start max-w-[1200px] mx-auto px-0 py-[90px] relative shrink-0 w-full">
             <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
               <FadeIn delay={0.1} className="basis-0 font-semibold grow leading-none min-h-px min-w-px relative shrink-0 text-[#9f2241] text-6xl text-center tracking-[-1.5px]">
-                <p className="leading-none mb-0 text-[#2e221a]">Uniting Africa </p>
+                <h1 className="leading-none mb-0 text-[#2e221a]">Uniting Africa </h1>
                 <p className="leading-none">
                   <span className="text-[#2e221a]">Against</span>
                   <span> Infectious Diseases</span>
@@ -64,7 +64,7 @@ function Landing() {
               </Link>
             </FadeIn>
           </div>
-        </div>
+        </section>
 
         {/* Graphic Strip */}
         <motion.div
@@ -79,15 +79,15 @@ function Landing() {
         />
 
         {/* Section 2 - Built for Collaboration */}
-        <div className="bg-white box-border content-stretch flex flex-col gap-10 items-center px-8 py-20 relative shrink-0 w-full">
+        <section className="bg-white box-border content-stretch flex flex-col gap-10 items-center px-8 py-20 relative shrink-0 w-full">
           <div className="content-stretch flex flex-col items-start max-w-[1200px] mx-auto relative shrink-0 w-full">
             <FadeIn className="box-border content-stretch flex flex-col items-start pb-6 pt-0 px-0 relative shrink-0 text-center w-full">
               <p className="font-medium leading-6 relative shrink-0 text-[#204727] text-base w-full">
                 A Trusted Space
               </p>
-              <p className="font-bold leading-9 relative shrink-0 text-zinc-950 text-3xl tracking-[-0.75px] w-full">
+              <h2 className="font-bold leading-9 relative shrink-0 text-zinc-950 text-3xl tracking-[-0.75px] w-full">
                 Built for collaboration, governed by countries
-              </p>
+              </h2>
             </FadeIn>
             <FadeIn delay={0.2} className="box-border content-stretch flex items-center justify-between pb-10 pt-0 px-0 relative shrink-0 w-full">
               <p className="basis-0 font-normal grow leading-6 min-h-px min-w-px relative shrink-0 text-zinc-950 text-base text-center max-w-[800px] mx-auto">
@@ -138,20 +138,20 @@ function Landing() {
               </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Section 3 - Upload and Validate */}
-        <div className="bg-white box-border flex flex-col gap-4 items-start px-4 sm:px-6 md:px-8 py-0 relative w-full">
+        <section className="bg-white box-border flex flex-col gap-4 items-start px-4 sm:px-6 md:px-8 py-0 relative w-full">
           <div className="flex flex-col gap-4 items-center relative w-full max-w-[1200px] mx-auto">
-            <FadeIn className="bg-[#f7f6ef] box-border flex flex-col gap-6 sm:gap-8 md:gap-10 items-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 lg:py-20 relative rounded-lg w-full">
+            <FadeIn className="bg-[#f7f6ef] box-border flex flex-col gap-6 sm:gap-8 md:gap-10 items-center px-4 sm:px-6 md:px-24 py-8 sm:py-12 md:py-16 lg:py-20 relative rounded-lg w-full">
               <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 items-start max-w-[1200px] relative w-full">
                 <div className="flex flex-col gap-3 sm:gap-4 items-start relative w-full">
                   <p className="font-medium leading-6 text-[#204727] text-base w-full">
                     Upload and Validate Pathogen Data
                   </p>
-                  <p className="font-bold leading-tight sm:leading-9 text-zinc-950 text-2xl sm:text-3xl tracking-tight w-full">
+                  <h2 className="font-bold leading-tight sm:leading-9 text-zinc-950 text-2xl sm:text-3xl tracking-tight w-full">
                     Submit genomic sequences and metadata directly from your lab.
-                  </p>
+                  </h2>
                 </div>
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 items-start relative w-full">
                   <div className="flex flex-col gap-6 items-start relative w-full md:w-[370px] md:flex-shrink-0">
@@ -187,21 +187,21 @@ function Landing() {
               </div>
             </FadeIn>
           </div>
-        </div>
+        </section>
 
         {/* Section 4 - Explore Shared Data */}
-        <div className="bg-white box-border flex flex-col gap-4 items-start px-4 sm:px-6 md:px-8 py-0 relative w-full">
+        <section className="bg-white box-border flex flex-col gap-4 items-start px-4 sm:px-6 md:px-8 py-0 relative w-full">
           <div className="flex flex-col gap-4 items-center relative w-full max-w-[1200px] mx-auto">
-            <div className="box-border flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-12 md:py-16 lg:py-20 relative w-full">
+            <div className="box-border flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center px-4 sm:px-6 md:px-24 py-8 sm:py-12 md:py-16 lg:py-20 relative w-full">
               <div className="flex items-start justify-center max-w-[1200px] relative w-full">
                 <FadeIn className="flex flex-col items-start relative w-full">
                   <div className="box-border flex flex-col items-start pb-3 sm:pb-4 md:pb-6 pt-0 px-0 relative w-full">
                     <p className="font-medium text-sm sm:text-base leading-5 sm:leading-6 text-[#204727] w-full">
                       Explore Shared Data
                     </p>
-                    <p className="font-bold leading-tight sm:leading-8 md:leading-9 text-zinc-950 text-xl sm:text-2xl md:text-3xl tracking-tight w-full mt-2">
+                    <h2 className="font-bold leading-tight sm:leading-8 md:leading-9 text-zinc-950 text-xl sm:text-2xl md:text-3xl tracking-tight w-full mt-2">
                       Access aggregated, quality-controlled datasets.
-                    </p>
+                    </h2>
                   </div>
                   <p className="font-normal text-sm sm:text-base leading-5 sm:leading-6 text-zinc-950 w-full mt-4">
                     Browse by pathogen, region, or date, and download data based on your permission level.
@@ -217,10 +217,10 @@ function Landing() {
               </FadeIn>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Section 5 - Governance & Access */}
-        <div className="bg-white box-border flex flex-col gap-4 items-center px-4 sm:px-6 md:px-8 pb-12 sm:pb-16 md:pb-20 pt-0 relative w-full">
+        <section className="bg-white box-border flex flex-col gap-4 items-center px-4 sm:px-6 md:px-8 pb-12 sm:pb-16 md:pb-20 pt-0 relative w-full">
           <FadeIn className="bg-[#1a5632] box-border flex flex-col md:flex-row gap-6 md:gap-8 items-start justify-center px-6 sm:px-8 md:px-10 lg:px-12 py-10 sm:py-14 md:py-20 lg:py-24 relative rounded-lg w-full max-w-[1200px] mx-auto">
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start max-w-[1200px] relative w-full">
               <div className="flex-shrink-0 w-full md:w-[178px] flex justify-center md:justify-start">
@@ -236,7 +236,7 @@ function Landing() {
                 <p className="font-medium leading-6 text-[#b4a269] text-sm sm:text-base w-full">
                   A Trusted Space
                 </p>
-                <p className="font-bold leading-tight sm:leading-8 md:leading-9 text-[#f3faf3] text-2xl sm:text-3xl tracking-tight w-full mt-1">Governance & Access</p>
+                <h2 className="font-bold leading-tight sm:leading-8 md:leading-9 text-[#f3faf3] text-2xl sm:text-3xl tracking-tight w-full mt-1">Governance & Access</h2>
                 <div className="h-3 sm:h-4 md:h-[14px] w-full" />
                 <div className="font-normal leading-6 text-[#f3faf3] text-sm sm:text-base w-full">
                   <p className="leading-6 mb-0">The platform operates on a multi-layered governance model:</p>
@@ -251,22 +251,18 @@ function Landing() {
                       <span className="leading-6">Regional bodies coordinate alerts and standards.</span>
                     </li>
                     <li className="ms-4 sm:ms-6">
-                      <span className="leading-6">
-                        Access is by invitation only, granted through your national institution.
-                        <br aria-hidden="true" />
-                        {` If your organization is not yet onboarded, contact your national focal point to request access.`}
-                      </span>
+                      <span className="leading-6">Access is by invitation only, granted through your national institution.</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </FadeIn>
-        </div>
+        </section>
 
         {/* Section - The Challenge */}
-        <div className="bg-white box-border flex flex-col gap-4 items-center px-4 sm:px-6 md:px-8 py-0 relative w-full">
-          <FadeIn className="bg-[#f7f6ef] box-border flex flex-col gap-10 items-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 lg:py-20 relative rounded-lg w-full max-w-[1200px] mx-auto">
+        <section className="bg-white box-border flex flex-col gap-4 items-center px-4 sm:px-6 md:px-8 py-0 relative w-full">
+          <FadeIn className="bg-[#f7f6ef] box-border flex flex-col gap-10 items-center px-4 sm:px-6 md:px-24 py-8 sm:py-12 md:py-16 lg:py-20 relative rounded-lg w-full max-w-[1200px] mx-auto">
             <div className="flex flex-col items-start max-w-[1200px] relative w-full">
               <div className="box-border flex items-center justify-between pb-0 pt-0 sm:pt-4 px-0 relative w-full">
                 <p className="font-medium leading-6 text-[#204727] text-sm sm:text-base w-full">
@@ -274,9 +270,9 @@ function Landing() {
                 </p>
               </div>
               <div className="box-border flex items-center justify-between pb-3 sm:pb-4 pt-0 px-0 relative w-full">
-                <p className="font-bold leading-tight sm:leading-8 md:leading-9 text-zinc-950 text-2xl sm:text-3xl tracking-tight w-full">
+                <h2 className="font-bold leading-tight sm:leading-8 md:leading-9 text-zinc-950 text-2xl sm:text-3xl tracking-tight w-full">
                   Overcoming Data Fragmentation in African Public Health
-                </p>
+                </h2>
               </div>
               <div className="box-border flex items-center justify-between pb-6 sm:pb-8 pt-0 px-0 relative w-full">
                 <p className="font-normal leading-6 text-zinc-950 text-sm sm:text-base w-full">
@@ -285,21 +281,21 @@ function Landing() {
               </div>
             </div>
           </FadeIn>
-        </div>
+        </section>
 
         {/* Section 6 - The Solution */}
-        <div className="bg-white box-border flex flex-col gap-4 items-center px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 relative w-full">
+        <section className="bg-white box-border flex flex-col gap-4 items-center px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 relative w-full">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10 items-start lg:items-center justify-center max-w-[1200px] mx-auto relative w-full">
-            <FadeIn className="flex flex-col items-start flex-1 relative w-full">
+            <FadeIn className="flex flex-col items-start flex-1 relative w-full px-4 sm:px-6 md:pl-24 md:pr-6">
               <div className="box-border flex items-center justify-between pb-0 pt-0 sm:pt-4 px-0 relative w-full">
                 <p className="font-medium leading-6 text-[#204727] text-sm sm:text-base w-full">
                   The Solution
                 </p>
               </div>
               <div className="box-border flex items-center justify-between pb-3 sm:pb-4 pt-0 px-0 relative w-full">
-                <p className="font-bold leading-tight sm:leading-8 md:leading-9 text-zinc-950 text-2xl sm:text-3xl tracking-tight w-full">
+                <h2 className="font-bold leading-tight sm:leading-8 md:leading-9 text-zinc-950 text-2xl sm:text-3xl tracking-tight w-full">
                   An Integrated Ecosystem for Genomic Surveillance
-                </p>
+                </h2>
               </div>
               <div className="box-border flex items-center justify-between pb-6 sm:pb-8 pt-0 px-0 relative w-full">
                 <p className="font-normal leading-6 text-zinc-950 text-sm sm:text-base w-full">
@@ -315,9 +311,9 @@ function Landing() {
                 <div className="relative shrink-0 size-6">
                   <img alt="" className="block max-w-none size-full" src={imgLucideUpload} />
                 </div>
-                <p className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
+                <h3 className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
                   Upload
-                </p>
+                </h3>
                 <p className="font-normal leading-5 sm:leading-6 text-zinc-50 text-xs sm:text-sm w-full">
                   Securely upload pathogen sequence and associated metadata.
                 </p>
@@ -333,9 +329,9 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <p className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
+                <h3 className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
                   Share
-                </p>
+                </h3>
                 <p className="font-normal leading-5 sm:leading-6 text-zinc-50 text-xs sm:text-sm w-full">
                   Share data in real-time according to country-specific guidelines.
                 </p>
@@ -351,11 +347,11 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <p className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
+                <h3 className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
                   Explore
-                </p>
+                </h3>
                 <p className="font-normal leading-5 sm:leading-6 text-zinc-50 text-xs sm:text-sm w-full">
-                  Explore and visualize data with powerful filtering and mapping tools.
+                  Explore data with powerful filtering and mapping tools.
                 </p>
               </motion.div>
               <motion.div
@@ -369,19 +365,19 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <p className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
+                <h3 className="font-bold leading-tight text-[#f3faf3] text-base sm:text-lg">
                   Download
-                </p>
+                </h3>
                 <p className="font-normal leading-5 sm:leading-6 text-zinc-50 text-xs sm:text-sm w-full">
                   Download selected datasets for further offline analysis and research.
                 </p>
               </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }
