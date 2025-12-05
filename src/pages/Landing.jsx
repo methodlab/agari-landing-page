@@ -5,7 +5,6 @@ import Footer from '../components/Footer.jsx';
 import FadeIn from '../components/FadeIn.jsx';
 import GeneticsHeroBackground from '../components/GeneticsHeroBackground.jsx';
 import imgGraphicStrip from '../assets/graphic-strip.png';
-import imgAfricaCdcLogoEn1 from '../assets/au_cdc_combo_logo.png';
 import imgAslmLogoFinalFinal211 from '../assets/aslm-logo.png';
 import imgMap from '../assets/map.png';
 import imgGroup from '../assets/governance-icon.svg';
@@ -77,69 +76,8 @@ function Landing() {
           style={{ backgroundImage: `url('${imgGraphicStrip}')`, backgroundSize: '788.5px 144.5px' }}
         />
 
-        {/* Section 2 - Built for Collaboration */}
-        <section className="bg-white box-border content-stretch flex flex-col gap-10 items-center px-8 py-20 relative shrink-0 w-full">
-          <div className="content-stretch flex flex-col items-start max-w-[1200px] mx-auto relative shrink-0 w-full">
-            <FadeIn className="box-border content-stretch flex flex-col items-start pb-6 pt-0 px-0 relative shrink-0 text-center w-full">
-              <p className="font-medium leading-6 relative shrink-0 text-[#204727] text-base w-full">
-                A Trusted Space
-              </p>
-              <h2 className="font-bold leading-9 relative shrink-0 text-zinc-950 text-3xl tracking-[-0.75px] w-full">
-                Built for collaboration, governed by countries
-              </h2>
-            </FadeIn>
-            <FadeIn delay={0.2} className="box-border content-stretch flex items-center justify-between pb-10 pt-0 px-0 relative shrink-0 w-full">
-              <p className="basis-0 font-normal grow leading-6 min-h-px min-w-px relative shrink-0 text-zinc-950 text-base text-center max-w-[800px] mx-auto">
-                The Platform enables African institutions to upload, manage, and share pathogen genomic data securely under national control, with regional coordination through Africa CDC and ASLM. Each dataset remains governed by its originating country, ensuring data sovereignty and compliance with local policies.
-              </p>
-            </FadeIn>
-            <div className="content-stretch flex flex-col gap-2 items-center relative shrink-0 w-full">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                variants={{
-                  visible: { transition: { staggerChildren: 0.1 } }
-                }}
-                className="content-center flex flex-wrap gap-12 items-center justify-center relative shrink-0 w-full"
-              >
-                {[
-                  { src: imgAfricaCdcLogoEn1, alt: "Africa CDC", className: "h-[60px] sm:h-[75px] md:h-[98px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgAslmLogoFinalFinal211, alt: "ASLM", className: "h-[75px]", imgClass: "h-full w-auto object-contain pointer-events-none" },
-                  { src: imgCeLogo, alt: "CE Logo", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgSsl, alt: "SSL Logo", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgRobertKochInstitute, alt: "Robert Koch Institute", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgSanbi, alt: "SANBI", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgIllumina, alt: "Illumina", className: "h-[43.5px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgBmgf, alt: "BMGF", className: "h-[58px] sm:h-[58px] md:h-[61px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgAdb, alt: "ADB", className: "h-[95px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgWb, alt: "WB", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
-                  { src: imgOntLogo, alt: "ONT Logo", className: "h-[56px]", imgClass: "h-full w-auto object-contain" }
-                ].map((logo, index) => (
-                  <motion.div
-                    key={index}
-                    variants={{
-                      hidden: { opacity: 0, y: 20 },
-                      visible: { opacity: 1, y: 0 }
-                    }}
-                    className={`${logo.className} relative shrink-0 flex items-center justify-center`}
-                  >
-                    {logo.imgClass.includes('absolute') ? (
-                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <img alt={logo.alt} className={logo.imgClass} src={logo.src} />
-                      </div>
-                    ) : (
-                      <img alt={logo.alt} className={logo.imgClass} src={logo.src} />
-                    )}
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
         {/* Section 3 - Upload and Validate */}
-        <section className="bg-white box-border flex flex-col gap-4 items-start px-4 sm:px-6 md:px-8 py-0 relative w-full">
+        <section className="bg-white box-border flex flex-col gap-4 items-start px-4 sm:px-6 md:px-8 pt-10 pb-0 relative w-full">
           <div className="flex flex-col gap-4 items-center relative w-full max-w-[1200px] mx-auto">
             <FadeIn className="bg-[#f7f6ef] box-border flex flex-col gap-6 sm:gap-8 md:gap-10 items-center px-4 sm:px-6 md:px-24 py-8 sm:py-12 md:py-16 lg:py-20 relative rounded-lg w-full">
               <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 items-start max-w-[1200px] relative w-full">
@@ -369,6 +307,66 @@ function Landing() {
                 <p className="font-normal leading-5 sm:leading-6 text-zinc-50 text-xs sm:text-sm w-full">
                   Download selected datasets for further offline analysis and research.
                 </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section - Built for Collaboration */}
+        <section className="bg-white box-border content-stretch flex flex-col gap-10 items-center px-8 py-20 relative shrink-0 w-full">
+          <div className="content-stretch flex flex-col items-start max-w-[1200px] mx-auto relative shrink-0 w-full">
+            <FadeIn className="box-border content-stretch flex flex-col items-start pb-6 pt-0 px-0 relative shrink-0 text-center w-full">
+              <p className="font-medium leading-6 relative shrink-0 text-[#204727] text-base w-full">
+                A Trusted Space
+              </p>
+              <h2 className="font-bold leading-9 relative shrink-0 text-zinc-950 text-3xl tracking-[-0.75px] w-full">
+                Built for collaboration, governed by countries
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.2} className="box-border content-stretch flex items-center justify-between pb-10 pt-0 px-0 relative shrink-0 w-full">
+              <p className="basis-0 font-normal grow leading-6 min-h-px min-w-px relative shrink-0 text-zinc-950 text-base text-center max-w-[800px] mx-auto">
+                The Platform enables African institutions to upload, manage, and share pathogen genomic data securely under national control, with regional coordination through Africa CDC and ASLM. Each dataset remains governed by its originating country, ensuring data sovereignty and compliance with local policies.
+              </p>
+            </FadeIn>
+            <div className="content-stretch flex flex-col gap-2 items-center relative shrink-0 w-full">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={{
+                  visible: { transition: { staggerChildren: 0.1 } }
+                }}
+                className="content-center flex flex-wrap gap-12 items-center justify-center relative shrink-0 w-full max-w-[840px] mx-auto"
+              >
+                {[
+                  { src: imgAdb, alt: "ADB", className: "h-[95px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgAslmLogoFinalFinal211, alt: "ASLM", className: "h-[71px]", imgClass: "h-full w-auto object-contain pointer-events-none" },
+                  { src: imgCeLogo, alt: "CE Logo", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgBmgf, alt: "Gates Foundation", className: "h-[58px] sm:h-[58px] md:h-[61px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgIllumina, alt: "Illumina", className: "h-[41px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgOntLogo, alt: "ONT Logo", className: "h-[56px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgRobertKochInstitute, alt: "Robert Koch Institute", className: "h-[56px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgSanbi, alt: "SANBI", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgSsl, alt: "SSL Logo", className: "h-[87px]", imgClass: "h-full w-auto object-contain" },
+                  { src: imgWb, alt: "WB", className: "h-[87px]", imgClass: "h-full w-auto object-contain" }
+                ].map((logo, index) => (
+                  <motion.div
+                    key={index}
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      visible: { opacity: 1, y: 0 }
+                    }}
+                    className={`${logo.className} relative shrink-0 flex items-center justify-center`}
+                  >
+                    {logo.imgClass.includes('absolute') ? (
+                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                        <img alt={logo.alt} className={logo.imgClass} src={logo.src} />
+                      </div>
+                    ) : (
+                      <img alt={logo.alt} className={logo.imgClass} src={logo.src} />
+                    )}
+                  </motion.div>
+                ))}
               </motion.div>
             </div>
           </div>
