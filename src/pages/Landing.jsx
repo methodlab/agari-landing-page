@@ -55,7 +55,7 @@ function Landing() {
                 >
                   <div className="box-border content-stretch flex gap-0 items-start px-1 py-0 relative shrink-0">
                     <p className="font-medium leading-6 relative shrink-0 text-[#f3faf3] text-sm text-nowrap whitespace-pre">
-                      Sign in to AGAR!
+                      Sign in to AGARI
                     </p>
                   </div>
                 </motion.div>
@@ -111,7 +111,7 @@ function Landing() {
                   <div className="flex flex-col items-start relative w-full md:flex-1">
                     <div className="font-normal leading-6 text-zinc-950 w-full">
                       <p className="leading-6 mb-0">Download Metadata Templates</p>
-                      <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">SARS-CoV-2.xls</p>
+                      <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]" href="/templates/SARS-CoV-2.xls">SARS-CoV-2.xls</a>
                       <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Klebsiella .xls</p>
                       <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Cholera .xls</p>
                       <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Mpox .xls</p>
