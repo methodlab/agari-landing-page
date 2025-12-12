@@ -109,15 +109,15 @@ function Landing() {
                     </Link>
                   </div>
                   <div className="flex flex-col items-start relative w-full md:flex-1">
-                    <div className="font-normal leading-6 text-zinc-950 w-full">
-                      <p className="leading-6 mb-0">Download Metadata Templates</p>
-                      <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]" href="/templates/SARS-CoV-2.xls">SARS-CoV-2.xls</a>
-                      <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Klebsiella .xls</p>
-                      <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Cholera .xls</p>
-                      <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Mpox .xls</p>
-                      <p className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41]">Malaria(human).xls</p>
-                      <p className="underline decoration-solid font-normal leading-6 text-[#348f41]">Malaria(vector).xls</p>
-                    </div>
+                  <div className="font-normal leading-6 text-zinc-950 w-full">
+                  <p className="leading-6 mb-0">Download Metadata Templates</p>
+                  <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41] block" href="/templates/SARS-CoV-2.xls" download>SARS-CoV-2.xls</a>
+                  <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41] block" href="/templates/Klebsiella.xls" download>Klebsiella.xls</a>
+                  <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41] block" href="/templates/Cholera.xls" download>Cholera.xls</a>
+                  <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41] block" href="/templates/Mpox.xls" download>Mpox.xls</a>
+                  <a className="underline decoration-solid font-normal leading-6 mb-0 text-[#348f41] block" href="/templates/Malaria(human).xls" download>Malaria (human).xls</a>
+                  <a className="underline decoration-solid font-normal leading-6 text-[#348f41] block" href="/templates/Malaria(vector).xls" download>Malaria (vector).xls</a>
+                </div>
                   </div>
                 </div>
               </div>
